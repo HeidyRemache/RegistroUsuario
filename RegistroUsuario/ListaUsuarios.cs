@@ -19,5 +19,18 @@ namespace RegistroUsuario
         {
             Usuarios.Add(usuario);
         }
+        //Creado Por Carmen Padilla
+        public List<Usuario> BuscarApellido(string apellido)
+        {
+            List<Usuario> aux = new List<Usuario>();
+            foreach (Usuario usuario in Usuarios)
+            {
+                if (usuario.Apellido.Equals(apellido))
+                {
+                    aux.Add(usuario);
+                }
+            }
+            return aux;
+        }
     }
 }
