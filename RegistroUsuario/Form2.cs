@@ -23,5 +23,17 @@ namespace RegistroUsuario
         {
             dgvUsuarios.DataSource = listaUsuarios2.Usuarios;
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (rbtnApellido.Checked)
+            {
+                dgvUsuarios.DataSource = listaUsuarios2.BuscarApellido(mtxtBuscarApellido.Text);
+            }
+            else
+            {
+                dgvUsuarios.DataSource = listaUsuarios2.BuscarCedula(txtBuscarCedula.Text);
+            }
+        }
     }
 }

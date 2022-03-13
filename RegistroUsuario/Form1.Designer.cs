@@ -50,7 +50,6 @@ namespace RegistroUsuario
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnMostrarDatos = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -58,6 +57,7 @@ namespace RegistroUsuario
             this.label7 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnMostrarDatos = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -331,15 +331,6 @@ namespace RegistroUsuario
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Datos opcionales";
             // 
-            // btnMostrarDatos
-            // 
-            this.btnMostrarDatos.Location = new System.Drawing.Point(631, 235);
-            this.btnMostrarDatos.Name = "btnMostrarDatos";
-            this.btnMostrarDatos.Size = new System.Drawing.Size(106, 23);
-            this.btnMostrarDatos.TabIndex = 5;
-            this.btnMostrarDatos.Text = "Mostrar Datos";
-            this.btnMostrarDatos.UseVisualStyleBackColor = true;
-            // 
             // btnNuevo
             // 
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -432,6 +423,16 @@ namespace RegistroUsuario
             this.label6.TabIndex = 0;
             this.label6.Text = "Descripción:";
             // 
+            // btnMostrarDatos
+            // 
+            this.btnMostrarDatos.Location = new System.Drawing.Point(631, 232);
+            this.btnMostrarDatos.Name = "btnMostrarDatos";
+            this.btnMostrarDatos.Size = new System.Drawing.Size(106, 23);
+            this.btnMostrarDatos.TabIndex = 6;
+            this.btnMostrarDatos.Text = "Mostrar Datos";
+            this.btnMostrarDatos.UseVisualStyleBackColor = true;
+            this.btnMostrarDatos.Click += new System.EventHandler(this.btnMostrarDatos_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -479,7 +480,6 @@ namespace RegistroUsuario
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button btnMostrarDatos;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -487,6 +487,7 @@ namespace RegistroUsuario
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnMostrarDatos;
     }
 }
 
