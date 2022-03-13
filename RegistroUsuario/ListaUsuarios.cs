@@ -32,5 +32,19 @@ namespace RegistroUsuario
             }
             return aux;
         }
+
+        //creado por BryanPeña
+        public List<Usuario> BuscarCedula(string id)
+        {
+            List<Usuario> aux = new List<Usuario>();
+            foreach (Usuario usuario in Usuarios)
+            {
+                if (usuario.Cedula.Equals(id))
+                {
+                    aux.Add(usuario);
+                }
+            }
+            return aux;
+        }
     }
 }
